@@ -37,5 +37,5 @@ Several server configuration options are available in ``.env``.
 The default properties file for Vanilla Minecraft has been provided in ``save/server.properties``
 for full configuration options.
 
-> [!CAUTION]
+> [!WARNING]
 > Do NOT change the server port within server.properties
