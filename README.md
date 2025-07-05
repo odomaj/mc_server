@@ -7,7 +7,8 @@ This repo requires a minimal Docker setup to run.
 1. [Docker](https://docs.docker.com/)
 2. [Docker Compose](https://docs.docker.com/compose/)
 
->[!NOTE] This repo was designed to run on Linux. No guarentees that this setup runs on Windows.
+> [!NOTE]
+> This repo was designed to run on Linux. No guarentees that this setup runs on Windows.
 
 ## Quick Start
 
@@ -36,4 +37,5 @@ Several server configuration options are available in ``.env``.
 The default properties file for Vanilla Minecraft has been provided in ``save/server.properties``
 for full configuration options.
 
->[!NOTE] Do NOT change the server port within server.properties
+> [!WARNING]
+> Do NOT change the server port within server.properties
