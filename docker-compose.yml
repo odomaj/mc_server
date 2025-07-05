@@ -1,0 +1,16 @@
+services:
+  minecraft-server:
+    image: ${DOCKER_IMAGE_BASENAME}:${MINECRAFT_VERSION}
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        MINECRAFT_VERSION: "${MINECRAFT_VERSION}"
+        MINECRAFT_HOME: "/home/minecraft"
+    volumes:
+      - ./save:/home/minecraft/save
+    environment:
+      MAX_RAM: ${MAX_RAM}
+      MINECRAFT_HOME: "/home/minecraft"
+    ports:
+      - "${SERVER_PORT}:25565"
